@@ -1,0 +1,100 @@
+main{
+    background-color: antiquewhite;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    margin: 5px;
+    font-size: large;
+    color: rgb(255 218 9);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+progress{
+    margin: 0px;
+    width: 100%;
+}
+
+.cnt-search{
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+    .cnt-search input,
+    .cnt-search button{
+        border: none;
+        margin: 10px;
+        border: 2px solid black;
+    }
+
+.cnt-cards{
+    border: 1px solid red;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+}
+
+.cnt-stats{
+    border: 1px solid greenyellow;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+/*--Diseños JS--*/
+.card{
+    width: 20rem;
+    display: flex;
+    /* height: 5rem; */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    transition: all .3s ease-in-out;
+}
+    .card h2{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-bottom: 2px solid black;
+    }
+
+    .card:hover{
+        transform: scale(0.9);
+    }
+
+    .imgCard{
+        width: 50%;
+        height: 50%;
+        float: right;
+        bottom: 50px;
+        position: relative;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: rgba(109, 109, 109, 0.747);
+    }
+    .figcCard{
+        position: relative;
+        bottom: 30px;
+        width: 90%;
+        margin: 10px;
+    }
+    .filterCard{
+        display: none;
+    }
